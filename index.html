@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Tic Tac Toe</title>
+		<script src="jquery-2.2.1.js"></script>
+		<script src="game.js"></script>
+	</head>
+
+	<body>
+	
+	<div id="home_page" align="center">
+		<table width="600px">
+			<tbody>
+				<tr>
+					<td colspan="3" align="center">Tic Tac Toe</td>
+				</tr>
+
+				<tr>
+					<td align="center">
+						<img src="imagens/jogador_1.png">
+						<br>
+						<input id="chosen_name1" type="text" maxlength="10" placeholder="Choose your name.">
+					</td>
+					<td id="btn_begin" align="center">
+						<img src="imagens/iniciar.png">
+					</td>
+					<td align="center">
+						<img src="imagens/jogador_2.png">
+						<br>
+						<input id="chosen_name2" type="text" maxlength="10" placeholder="Choose your name.">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+
+	<div id="stage" style="display: none; margin-top: 50px; text-align: center;">
+		<div style="display: inline-block;"> <!--To put the divs in the sema line-->
+			<img src="imagens/jogador_1.png">
+			<br>
+			<span id="player_name1"></span>
+		</div>
+
+		<div style="display: inline-block;">
+			<table>
+				<tr>
+					<td style="border-bottom: solid 1px red; border-right: solid 1px red;">
+						<div class="play" id="a-1" style="width: 100px; height: 100px;"></div>
+					</td>
+					<td style="border-bottom: solid 1px red; border-right: solid 1px red;">
+						<div class="play" id="a-2" style="width: 100px; height: 100px;"></div>
+					</td>
+					<td style="border-bottom: solid 1px red;">
+						<div class="play" id="a-3" style="width: 100px; height: 100px;"></div>
+					</td>
+				</tr>
+				<tr>
+					<td style="border-bottom: solid 1px red; border-right: solid 1px red;">
+						<div class="play" id="b-1" style="width: 100px; height: 100px;"></div>
+					</td>
+					<td style="border-bottom: solid 1px red; border-right: solid 1px red;">
+						<div class="play" id="b-2" style="width: 100px; height: 100px;"></div>
+					</td>
+					<td style="border-bottom: solid 1px red;">
+						<div class="play" id="b-3" style="width: 100px; height: 100px;"></div>
+					</td>
+				</tr>
+				<tr>
+					<td style="border-right: solid 1px red;">
+						<div class="play" id="c-1" style="width: 100px; height: 100px;"></div>
+					</td>
+					<td style="border-right: solid 1px red;">
+						<div class="play" id="c-2" style="width: 100px; height: 100px;"></div>
+					</td>
+					<td>
+						<div class="play" id="c-3" style="width: 100px; height: 100px;"></div>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<div style="display: inline-block;">
+			<img src="imagens/jogador_2.png">
+			<br>
+			<span id="player_name2"></span>
+		</div>
+	</div>
+
+
+	</body>
+</html>
